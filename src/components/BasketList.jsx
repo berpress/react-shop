@@ -15,7 +15,7 @@ function BasketList(props) {
 
   return (
     <ui className="collection basket-list">
-      <li className="collection-item active">Корзина</li>
+      <li className="collection-item active">Cart</li>
         {
           order.length ? order.map((item) =>(
             <BasketItem 
@@ -24,12 +24,12 @@ function BasketList(props) {
             decQuantity={decQuantity} 
             {...item} 
             removeFromBasket={removeFromBasket}/>
-          )) : <li className="collection-item">Cart is Empty</li>
+          )) : <li className="collection-item" data-test="cart-empty">Cart is Empty</li>
         }
-      <li className="collection-item active">Total price: {totalPrice} ₽ </li>
+      <li className="collection-item active" data-test="total-price">Total price: {totalPrice} ₽ </li>
       <i className="material-icons basket-close" onClick={handleBasketShow}>close</i>
       <li className='collection-item'>
-          <button className='btn red btn-small' onClick={setOrderZero}>Buy</button>
+          <button className='btn red btn-small' data-test="buy-btn" onClick={setOrderZero}>Buy</button>
       </li>
   </ui>
   )

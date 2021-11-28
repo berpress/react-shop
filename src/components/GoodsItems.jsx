@@ -19,6 +19,7 @@ function GoodsItem(props) {
         <div className='card-action'>
             <button
                 className='btn'
+                data-test="buy"
                 onClick={() =>
                     addToBasket({
                         itemID,
@@ -29,7 +30,7 @@ function GoodsItem(props) {
             >
                 Buy
             </button>
-            <span className='right' style={{ fontSize: '1.8rem' }}>
+            <span className='right' data-test="price" style={{ fontSize: '1.8rem' }}>
                 {price} ₽
             </span>
         </div>

@@ -15,6 +15,7 @@ function BasketItem(props) {
             <i
                 className='material-icons basket-quantity'
                 onClick={() => decQuantity(itemID)}
+                data-test="minus"
             >
                 remove
             </i>{' '}
@@ -22,12 +23,14 @@ function BasketItem(props) {
             <i
                 className='material-icons basket-quantity'
                 onClick={() => incQuantity(itemID)}
+                data-test="plus"
             >
                 add
             </i>{' '}
-            = {price * quantity} руб.
+            = {price * quantity} rub.
             <span
                 className='secondary-content'
+                data-test="remove"
                 onClick={() => removeFromBasket(itemID)}
             >
                 <i className='material-icons basket-delete'>close</i>
