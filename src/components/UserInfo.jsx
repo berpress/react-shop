@@ -66,10 +66,7 @@ function UserInfo (props) {
           <p id='street'>Street: {street}</p>
           <p id='number_home'>Home number: {homeNumber}</p>
           <p id='phone'>Phone: {phone}</p>
-          <button 
-                class="waves-effect waves-light btn"
-                >Edit
-          </button>
+          <h4>This page show user info. For add data, use api.</h4>
         </form>
     </div>
   );

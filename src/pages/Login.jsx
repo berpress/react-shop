@@ -48,7 +48,7 @@ function Login() {
     return (
         <div class="row">
             <img className="image-login" src="https://cdn3.iconfinder.com/data/icons/business-insurance-8/64/business_insurance-10-512.png" alt="user" />
-            <h4>Sig in</h4>
+            <h4>Sign in</h4>
             <div class="input-field col s6">
                 <input 
                 value={user}

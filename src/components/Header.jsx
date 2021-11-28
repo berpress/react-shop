@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { API_URL } from '../config.js'
 
@@ -40,11 +40,6 @@ function Header() {
     }
     fetchMyAPI()
   }, [])
-
-  // const setBalance = (money) => {
-  //   const newBalance = balance - money;
-  //   setUserBalance(newBalance);
-  // }
 
   const handleLogout = () => {
     localStorage.removeItem('token');
