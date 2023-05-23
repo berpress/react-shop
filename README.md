@@ -1,4 +1,4 @@
-# Reac Shop
+# React Shop
 Test UI APP for testing https://berpress.github.io/react-shop/
 
 ![](images/pokupki.jpg)
